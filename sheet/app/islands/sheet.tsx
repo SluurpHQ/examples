@@ -47,6 +47,7 @@ export default function Sheet({ collection, sheet, name, resets }: { collection:
   // What is chosen here, for the others; theirs, from them.
   let mine: SheetArea = { c0: 0, c1: 0, r0: 0, r1: 0 };
   let holds: string[] = [];
+  let since = 0;
   const others = signal<SheetPresence[]>([]);
   const evaluations: Record<string, number> = {};
   (window as unknown as { evaluations: typeof evaluations }).evaluations = evaluations;
@@ -59,7 +60,7 @@ export default function Sheet({ collection, sheet, name, resets }: { collection:
         waiting={() => !store.ready()}
         others={others}
         onSelect={(area) => (mine = area)}
-        onHold={(refs) => (holds = refs)}
+        onHold={(refs, at) => ((holds = refs), (since = at))}
         onEvaluate={(ref) => (evaluations[ref] = (evaluations[ref] ?? 0) + 1)}
         // A way of showing a cell, of this app's own: a bar as long as its
         // value, from 0 to 1 — =SUM(A1:A3)/20, say. Chosen from a cell's menu.
@@ -89,9 +90,9 @@ export default function Sheet({ collection, sheet, name, resets }: { collection:
             over: table,
             client: sluurp,
             name: who,
-            state: () => ({ ...mine, holds }),
+            state: () => ({ ...mine, holds, since }),
             onState: (all: Other[]) =>
-              others.set(all.map((o) => ({ id: o.id, name: o.name, color: o.color, area: o.state as SheetArea, holds: (o.state as { holds?: string[] }).holds }))),
+              others.set(all.map((o) => ({ id: o.id, name: o.name, color: o.color, area: o.state as SheetArea, ...(o.state as { holds?: string[]; since?: number }) }))),
           })
         }
       />
