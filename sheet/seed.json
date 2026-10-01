@@ -1,0 +1,94 @@
+{
+  "collections": [
+    {
+      "name": "cells",
+      "schema": [
+        {
+          "name": "sheet",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "ref",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "formula",
+          "type": "text"
+        },
+        {
+          "name": "bold",
+          "type": "bool"
+        },
+        {
+          "name": "format",
+          "type": "text"
+        },
+        {
+          "name": "renderer",
+          "type": "text"
+        }
+      ],
+      "rules": {
+        "list": "",
+        "view": "",
+        "create": "",
+        "update": "",
+        "delete": ""
+      }
+    }
+  ],
+  "records": {
+    "cells": [
+      {
+        "id": "demoa1000000000",
+        "sheet": "demo",
+        "ref": "A1",
+        "formula": "2"
+      },
+      {
+        "id": "demoa2000000000",
+        "sheet": "demo",
+        "ref": "A2",
+        "formula": "3"
+      },
+      {
+        "id": "demoa3000000000",
+        "sheet": "demo",
+        "ref": "A3",
+        "formula": "=A1+A2"
+      },
+      {
+        "id": "demob1000000000",
+        "sheet": "demo",
+        "ref": "B1",
+        "formula": "10"
+      },
+      {
+        "id": "demob2000000000",
+        "sheet": "demo",
+        "ref": "B2",
+        "formula": "=B1*2"
+      },
+      {
+        "id": "demob3000000000",
+        "sheet": "demo",
+        "ref": "B3",
+        "formula": "=B2+1"
+      },
+      {
+        "id": "democ1000000000",
+        "sheet": "demo",
+        "ref": "C1",
+        "formula": "=SUM(A1:A3)"
+      },
+      {
+        "id": "democ2000000000",
+        "sheet": "demo",
+        "ref": "C2",
+        "formula": "=B3*2"
+      }
+    ]
+  }
+}

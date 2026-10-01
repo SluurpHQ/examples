@@ -1,0 +1,64 @@
+{
+  "collections": [
+    {
+      "name": "articles",
+      "schema": [
+        { "name": "title", "type": "text", "required": true },
+        { "name": "tags", "type": "text" },
+        { "name": "body", "type": "json" }
+      ],
+      "rules": { "list": "", "view": "" }
+    }
+  ],
+  "content": {
+    "collections": ["articles"],
+    "locales": ["en", "fr"],
+    "previews": { "articles": "/{locale}/{slug}" }
+  },
+  "records": {
+    "articles": [
+      {
+        "id": "$id_hello",
+        "title": "Hello, world",
+        "tags": "news, sluurp",
+        "_slug": "hello-world",
+        "_locale": "en",
+        "_published": "2026-10-01T09:00:00Z",
+        "_seo": { "description": "The first post on a blog written in Sluurp's admin." },
+        "body": [
+          { "id": "b1", "type": "text", "text": "This blog is a Sluurp app with no code of its own for storing posts: they are a content collection, written in the admin, drafted, reviewed and published there." },
+          { "id": "b2", "type": "h2", "text": "What it shows" },
+          { "id": "b3", "type": "bullet", "text": "Pages drawn on the server, for search engines and link previews" },
+          { "id": "b4", "type": "bullet", "text": "Posts in two languages, linked as translations" },
+          { "id": "b5", "type": "bullet", "text": "A feed and a sitemap made for it" }
+        ]
+      },
+      {
+        "id": "$id_bonjour",
+        "title": "Bonjour, le monde",
+        "tags": "news, sluurp",
+        "_slug": "bonjour-le-monde",
+        "_locale": "fr",
+        "_of": "$id_hello",
+        "_published": "2026-10-01T09:00:00Z",
+        "_seo": { "description": "Le premier billet d'un blog écrit dans l'admin de Sluurp." },
+        "body": [
+          { "id": "b1", "type": "text", "text": "Ce blog est une app Sluurp sans code à elle pour garder ses billets : ils sont une collection de contenu, écrite dans l'admin." }
+        ]
+      },
+      {
+        "id": "$id_drafts",
+        "title": "Drafts, reviews and a time to publish",
+        "tags": "how-to",
+        "_slug": "drafts-reviews-and-a-time-to-publish",
+        "_locale": "en",
+        "_published": "2026-10-02T09:00:00Z",
+        "_seo": { "description": "How a post goes from a first draft to the site." },
+        "body": [
+          { "id": "c1", "type": "text", "text": "A writer saves drafts and sends them for review. An editor changes them. A publisher puts them live, now or at a time." },
+          { "id": "c2", "type": "quote", "text": "Nothing a reader sees changes until it is published." }
+        ]
+      }
+    ]
+  }
+}
