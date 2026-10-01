@@ -15,4 +15,3 @@ sluurp serve --public todos/app
 | [server-components](server-components/app) | A server-rendered page, a server function called from the browser, and islands. |
 | [wiki](wiki/app) | A whole wiki on Pages: nested pages, history, a link graph, books and PDF export. |
 | [ui-library](ui-library/app) | Your own components beside the UI kit's, with stories and their tests. |
-| [components](components) | The UI kit's test bench: galleries of every component, the JSX runtime and renderer benchmarks. |
