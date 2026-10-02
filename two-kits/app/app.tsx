@@ -3,13 +3,15 @@ import { mount } from "sluurp/ui";
 import { Button } from "sluurp/kit/button.js";
 import { Dialog } from "sluurp/kit/dialog.js";
 import { DropdownMenu } from "./ui/dropdown-menu.tsx";
+import { Button as MyButton } from "./ui/button.tsx";
 
 const open = signal(false);
 const chosen = signal("Nothing chosen");
 
 mount("#app", () => (
-  <main class="p-6">
+  <main class="flex gap-3 p-6">
     <Button onClick={() => open.set(true)}>Open the dialog</Button>
+    <MyButton onClick={() => chosen.set("Mine pressed")}>My button</MyButton>
     <Dialog open={open} title="Share" description="The dialog is Sluurp's; the menu in it is this app's copy.">
       <div class="flex items-center justify-between gap-2 pt-2">
         <DropdownMenu
