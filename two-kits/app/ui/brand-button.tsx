@@ -2,12 +2,12 @@ import { variants } from "sluurp/cn";
 import type { Props, Reactive } from "./types.ts";
 
 /* ===================================================================
-   Button
+   BrandButton
    =================================================================== */
 
-export const buttonVariants = variants(
+export const brandButtonVariants = variants(
   `
-    inline-flex shrink-0 select-none items-center justify-center gap-2 rounded-md text-sm
+    inline-flex shrink-0 select-none items-center justify-center gap-2 rounded-full text-sm
     font-medium whitespace-nowrap transition-[color,background-color,border-color,box-shadow,opacity,scale] duration-200 ease-out outline-none
     active:scale-[0.97] motion-reduce:active:scale-100
     focus-visible:border-ring focus-visible:ring-[3px]
@@ -22,7 +22,7 @@ export const buttonVariants = variants(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "bg-linear-to-r from-violet-600 to-fuchsia-500 text-white shadow-md hover:opacity-90",
         destructive:
           `
     bg-destructive text-white hover:bg-destructive/90
@@ -41,8 +41,8 @@ export const buttonVariants = variants(
         // beside its text, so the icon does not make it look lopsided.
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
         xs: "h-6 gap-1 rounded-md px-2 text-xs has-[>svg]:px-1.5 [&_svg:not([class*='size-'])]:size-3",
-        sm: "h-8 gap-1.5 rounded-md px-3 has-[>svg]:px-2.5",
-        lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
+        sm: "h-8 gap-1.5 rounded-full px-3 has-[>svg]:px-2.5",
+        lg: "h-10 rounded-full px-6 has-[>svg]:px-4",
         icon: "size-9",
         "icon-xs": "size-6 rounded-md [&_svg:not([class*='size-'])]:size-3",
         "icon-sm": "size-8",
@@ -53,41 +53,41 @@ export const buttonVariants = variants(
   },
 );
 
-export type ButtonVariant =
+export type BrandButtonVariant =
   | "default" | "destructive" | "outline" | "secondary" | "ghost" | "link";
 
-export type ButtonSize =
+export type BrandButtonSize =
   | "default" | "xs" | "sm" | "lg" | "icon" | "icon-xs" | "icon-sm" | "icon-lg";
 
-export interface ButtonProps extends Props {
-  variant?: ButtonVariant;
-  size?: ButtonSize;
-  type?: "button" | "submit" | "reset";
+export interface BrandButtonProps extends Props {
+  variant?: BrandButtonVariant;
+  size?: BrandButtonSize;
+  type?: "brand-button" | "submit" | "reset";
   disabled?: Reactive<boolean>;
 }
 
 /**
  * A button.
  *
- *     <Button variant="outline" onClick={save}>Save</Button>
+ *     <BrandButton variant="outline" onClick={save}>Save</BrandButton>
  *
- * `type="button"` by default, which is the opposite of the HTML default and
+ * `type="brand-button"` by default, which is the opposite of the HTML default and
  * right far more often: a button inside a form that submits when you meant it
  * to open a menu is a bug nobody sees until the form is long.
  */
-export function Button({
+export function BrandButton({
   children,
   variant,
   size,
   className,
-  type = "button",
+  type = "brand-button",
   disabled,
   ...rest
-}: ButtonProps = {}) {
+}: BrandButtonProps = {}) {
   return (
     <button
       data-size={size ?? "default"}
-      class={buttonVariants({ variant, size, className })}
+      class={brandButtonVariants({ variant, size, className })}
       type={type}
       disabled={disabled}
       {...rest}
