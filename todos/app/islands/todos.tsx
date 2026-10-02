@@ -48,8 +48,7 @@ export default function Todos({ resets }: { resets?: number } = {}, island?: HTM
         <Button type="submit">Add</Button>
       </form>
       <ul class="mt-4 divide-y rounded-lg border">
-        {() =>
-          todos.rows().map((todo) => (
+        {todos.rows().map((todo) => (
             <li class="flex items-center gap-3 px-3 py-2">
               <Checkbox checked={todo.done} onChange={(done: boolean | "indeterminate") => todos.update(todo.id, { done: done === true })} />
               <span class={todo.done ? "flex-1 text-muted-foreground line-through" : "flex-1"}>{todo.title}</span>

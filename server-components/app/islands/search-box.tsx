@@ -8,7 +8,7 @@ export default function SearchBox() {
   return (
     <section class="search-box">
       <Input aria-label="Search" value={text} />
-      <output>{() => `${text().length} letters`}</output>
+      <output>{`${text().length} letters`}</output>
       <div class="list" style={{ height: "60px", overflow: "auto" }}>
         {Array.from({ length: 20 }, (_, i) => <p>Row {i + 1}</p>)}
       </div>

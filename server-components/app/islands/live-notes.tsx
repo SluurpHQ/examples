@@ -10,5 +10,5 @@ export async function recent() {
 export default function LiveNotes() {
   const notes = signal<{ read: () => { title: string }[] } | null>(null);
   recent().then((read) => notes.set({ read }));
-  return <ul class="live-notes">{() => (notes()?.read() ?? []).map((n) => <li>{n.title}</li>)}</ul>;
+  return <ul class="live-notes">{(notes()?.read() ?? []).map((n) => <li>{n.title}</li>)}</ul>;
 }

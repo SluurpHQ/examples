@@ -79,7 +79,7 @@ function SignIn() {
             <Label for="password">{t("wiki.password")}</Label>
             <Input id="password" type="password" autocomplete="current-password" value={password} onInput={(e: Event) => password.set((e.target as HTMLInputElement).value)} />
           </div>
-          {() => (wrong() ? <p class="text-sm text-destructive">{t("wiki.wrong")}</p> : "")}
+          {wrong() ? <p class="text-sm text-destructive">{t("wiki.wrong")}</p> : ""}
           <Button type="submit">{t("wiki.sign-in")}</Button>
         </form>
       </Card>
@@ -116,7 +116,7 @@ mount(
   document.getElementById("app")!,
   () => (
     <>
-      {() => (me() ? Wiki() : SignIn())}
+      {me() ? Wiki() : SignIn()}
       {Toaster().view()}
     </>
   ),
