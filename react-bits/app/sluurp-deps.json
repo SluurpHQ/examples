@@ -128,7 +128,8 @@
   },
   "imports": {
     "ogl": "/vendor/npm/ogl@1.0.11/src/index.js",
-    "ogl/": "/vendor/npm/ogl@1.0.11/"
+    "ogl/": "/vendor/npm/ogl@1.0.11/",
+    "@/": "/"
   },
   "scopes": {}
 }
