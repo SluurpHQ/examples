@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "ogl": [
+        "./ogl@1.0.11/types/index.d.ts"
+      ],
+      "ogl/*": [
+        "./ogl@1.0.11/*"
+      ]
+    }
+  }
+}
