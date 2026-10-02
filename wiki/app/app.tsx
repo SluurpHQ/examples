@@ -65,27 +65,24 @@ function SignIn() {
   };
   return (
     <div class="grid min-h-svh place-items-center p-4">
-      {Card({
-        className: "w-full max-w-sm p-6",
-        children: (
-          <form class="grid gap-4" onSubmit={submit}>
-            <div class="grid gap-1">
-              <h1 class="text-xl font-semibold">{t("wiki.sign-in")}</h1>
-              <p class="text-sm text-muted-foreground">{t("wiki.sign-in-about")}</p>
-            </div>
-            <div class="grid gap-1.5">
-              {Label({ for: "email", children: t("wiki.email") })}
-              {Input({ id: "email", type: "email", autocomplete: "username", value: email, onInput: (e: Event) => email.set((e.target as HTMLInputElement).value) })}
-            </div>
-            <div class="grid gap-1.5">
-              {Label({ for: "password", children: t("wiki.password") })}
-              {Input({ id: "password", type: "password", autocomplete: "current-password", value: password, onInput: (e: Event) => password.set((e.target as HTMLInputElement).value) })}
-            </div>
-            {() => (wrong() ? <p class="text-sm text-destructive">{t("wiki.wrong")}</p> : "")}
-            {Button({ type: "submit", children: t("wiki.sign-in") })}
-          </form>
-        ),
-      })}
+      <Card className="w-full max-w-sm p-6">
+        <form class="grid gap-4" onSubmit={submit}>
+          <div class="grid gap-1">
+            <h1 class="text-xl font-semibold">{t("wiki.sign-in")}</h1>
+            <p class="text-sm text-muted-foreground">{t("wiki.sign-in-about")}</p>
+          </div>
+          <div class="grid gap-1.5">
+            <Label for="email">{t("wiki.email")}</Label>
+            <Input id="email" type="email" autocomplete="username" value={email} onInput={(e: Event) => email.set((e.target as HTMLInputElement).value)} />
+          </div>
+          <div class="grid gap-1.5">
+            <Label for="password">{t("wiki.password")}</Label>
+            <Input id="password" type="password" autocomplete="current-password" value={password} onInput={(e: Event) => password.set((e.target as HTMLInputElement).value)} />
+          </div>
+          {() => (wrong() ? <p class="text-sm text-destructive">{t("wiki.wrong")}</p> : "")}
+          <Button type="submit">{t("wiki.sign-in")}</Button>
+        </form>
+      </Card>
     </div>
   );
 }
@@ -99,15 +96,16 @@ function Wiki() {
         <a href="#/pages" class="flex items-center gap-2 font-semibold">📚 {t("wiki.title")}</a>
         <span class="grow"></span>
         {toolbar()}
-        {Button({
-          variant: "ghost",
-          size: "sm",
-          onClick: () => {
+        <Button
+          variant="ghost"
+          size="sm"
+          onClick={() => {
             sluurp.authStore.clear();
             me.set(null);
-          },
-          children: t("wiki.sign-out"),
-        })}
+          }}
+        >
+          {t("wiki.sign-out")}
+        </Button>
       </header>
       <main class="mx-auto w-full max-w-6xl p-4 md:p-8">{view()}</main>
     </div>

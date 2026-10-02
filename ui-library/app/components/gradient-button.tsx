@@ -15,5 +15,5 @@ const TONES = {
 
 /** A button for the one thing a page is for, when the page is a celebration. */
 export function GradientButton({ tone = "sunset", className, ...rest }: GradientButtonProps = {}) {
-  return Button({ ...rest, className: cn("bg-linear-to-r text-white shadow-md hover:opacity-90", TONES[tone], className) });
+  return <Button {...rest} className={cn("bg-linear-to-r text-white shadow-md hover:opacity-90", TONES[tone], className)} />;
 }
