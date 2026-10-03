@@ -19,11 +19,11 @@ import { Input } from "sluurp/kit/input.js";
 import { Label } from "sluurp/kit/label.js";
 import { Toaster, toast } from "sluurp/kit/sonner.js";
 import { configurePages, PagesScreen } from "sluurp/pages";
-import pagesWords from "sluurp/pages/words.json" with { type: "json" };
+import pagesTranslations from "sluurp/pages/translations.json" with { type: "json" };
 import own from "./i18n.json" with { type: "json" };
 
 const sluurp = new Sluurp();
-const i18n = createI18n({ table: { ...pagesWords, ...own, locales: own.locales }, storageKey: "wiki", appName: "Wiki" });
+const i18n = createI18n({ table: { ...pagesTranslations, ...own, locales: own.locales }, storageKey: "wiki", appName: "Wiki" });
 i18n.connect?.(sluurp);
 const t = i18n.t;
 
