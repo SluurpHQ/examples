@@ -14,6 +14,6 @@ sluurp serve --public .
 | [docs-site](docs-site/app) | A landing page and Markdown docs with a generated sidebar, published as plain files with `sluurp static`. |
 | [blog](blog/app) | Posts in two languages, tags, feeds and a sitemap, rendered on the server. |
 | [server-components](server-components/app) | A server-rendered page, client components, and server functions called from the browser. |
-| [wiki](wiki/app) | A whole wiki on Pages: nested pages, history, a link graph, books and PDF export. |
+| [wiki](wiki/app) | A whole wiki on Pages: nested pages, history, a link graph, books and PDF export. Pages is a paid plugin: it runs on a server that has bought it. |
 | [contact-form](contact-form/app) | A form built from shadcn's fields with React Hook Form; one zod schema checks it in the browser and again on the server. |
 | [react-bits](react-bits/app) | A React Bits background, added with shadcn, with registry controls beside it. |

@@ -10,8 +10,9 @@
         "@fontsource-variable/geist-mono": "^5.3.0",
         "@fontsource-variable/source-serif-4": "^5.3.0",
         "@fontsource-variable/space-grotesk": "^5.3.0",
-        "@sluurp-plugins/blocks": "https://sluurp.org/registry/blocks-0.2.2.tgz",
-        "@sluurp-plugins/pages": "https://sluurp.org/registry/pages-0.2.3.tgz",
+        "@fontsource/playfair-display": "^5.3.0",
+        "@sluurp-plugins/blocks": "https://sluurp.org/registry/blocks-0.3.0.tgz",
+        "@sluurp-plugins/pages": "https://sluurp.org/registry/pages-0.3.3.tgz",
         "@sluurp/twist": "github:SluurpHQ/twist",
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
@@ -31,6 +32,7 @@
         "recharts": "3.8.0",
         "roughjs": "^4.6.6",
         "sonner": "^2.0.8",
+        "source-serif": "^4.5.1",
         "tailwind-merge": "^3.7.0",
         "temml": "^0.13.5",
         "topojson-client": "3",
@@ -129,6 +131,8 @@
 
     "@fontsource-variable/space-grotesk": ["@fontsource-variable/space-grotesk@5.3.0", "", {}, "sha512-2IxmvfB08i9vnGB3Ym/AXvhRE+8XOjWMXIyDum03c+tPwH0FUoMNQfGpU8NXPxjbws0Vvss3AH0Zqt4oJBBAdw=="],
 
+    "@fontsource/playfair-display": ["@fontsource/playfair-display@5.3.0", "", {}, "sha512-uJSABalvdWc10fEPppQjQocamT21LEyRfzzWfRfqbkPz+sRv+kKpYDKyluBUskvJREkJTos9epj1WjQROGu99Q=="],
+
     "@hono/node-server": ["@hono/node-server@2.1.3", "", { "peerDependencies": { "hono": "^4" } }, "sha512-TA//nWMqPhbfdfneACk6t5a9eqbS9lABEPyKn0/xZTah3H3U2XaVg85rJFl0/Fyit0I552YDHgXGVSf3GwqbUw=="],
 
     "@jridgewell/gen-mapping": ["@jridgewell/gen-mapping@0.3.13", "", { "dependencies": { "@jridgewell/sourcemap-codec": "^1.5.0", "@jridgewell/trace-mapping": "^0.3.24" } }, "sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA=="],
@@ -193,9 +197,9 @@
 
     "@sindresorhus/merge-streams": ["@sindresorhus/merge-streams@4.0.0", "", {}, "sha512-tlqY9xq5ukxTUZBmoOp+m61cqwQD5pHJtFY3Mn8CA8ps6yghLH/Hw8UPdqg4OLmFW3IFlcXnQNmo/dh8HzXYIQ=="],
 
-    "@sluurp-plugins/blocks": ["@sluurp-plugins/blocks@https://sluurp.org/registry/blocks-0.2.2.tgz", {}, "sha512-8Chex1yR76lqsEgyL+/a9SCIYJuafNgIqac25fq1tc28yvE/Wg3RrmvL98QUG2GlZYTlWQo8wsKRPNc/R4bGpw=="],
+    "@sluurp-plugins/blocks": ["@sluurp-plugins/blocks@https://sluurp.org/registry/blocks-0.3.0.tgz", {}, "sha512-nu9657O5k1smshcKrAeTx86n6Yo20vftKQXiI4VR8nYNd8gVdXynLYOVnnHTPX17VNmyZHgc4YhvhaTYvRPEOQ=="],
 
-    "@sluurp-plugins/pages": ["@sluurp-plugins/pages@https://sluurp.org/registry/pages-0.2.3.tgz", {}, "sha512-bhH7weJ7VYo0YRtvlx54vOvennryKKXbByaeDOf4mKxVyeeL4cZI25/+q0qXK6U/RiYWrnzHfVUb8bO8M9PV8g=="],
+    "@sluurp-plugins/pages": ["@sluurp-plugins/pages@https://sluurp.org/registry/pages-0.3.3.tgz", {}, "sha512-Vd96ICqQZQXDd+YZ02ofN2NIGOOvxanL4Dj8RlM5qen884e9WDf6XtoravTkLAQN3BHrfIoAzYYmsKlX/t6LgQ=="],
 
     "@sluurp/twist": ["@sluurp/twist@github:SluurpHQ/twist#26f38e5", { "peerDependencies": { "react": ">=19", "react-dom": ">=19", "vite": ">=6" }, "optionalPeers": ["react", "react-dom", "vite"] }, "SluurpHQ-twist-26f38e5", "sha512-IwfMSU53dt2g+q3l1s/G55q/G79PXmg4P51tM/DJx0M4yIO1MedSmPNEF8iOxCEjDwX0S5uwb+4Z7Yawv2ULeQ=="],
 
@@ -758,6 +762,8 @@
     "source-map": ["source-map@0.6.1", "", {}, "sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g=="],
 
     "source-map-js": ["source-map-js@1.2.2", "", {}, "sha512-KGj/8Y43x35aZVDtt+J4mK1hoLGHULMYfSkODJNQjNDC3oW1PqPoxMwo0pLUsWM/UEGzON/NxeHywEfNXNP3Vw=="],
+
+    "source-serif": ["source-serif@4.5.1", "", {}, "sha512-NUAh5IzF7KiUu2gTpqE+ed9MNbMe4st7LIIXZ0OHHSPc6gg86H67j04M8sIhU2qqFd26btXaFQ2ge5u/p72j0Q=="],
 
     "statuses": ["statuses@2.0.2", "", {}, "sha512-DvEy55V3DB7uknRo+4iOGT5fP1slR8wQohVdknigZPMpMstaKJQWhwiYBACJE3Ul2pTnATihhBYnRhZQHGBiRw=="],
 
