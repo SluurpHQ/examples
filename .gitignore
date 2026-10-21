@@ -1,0 +1,6 @@
+*_data/
+node_modules/
+dist/
+# A vendored package is kept whole, its built files too.
+!**/vendor/npm/**/dist/
+.sluurp/

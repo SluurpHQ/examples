@@ -1,0 +1,42 @@
+{
+  "collections": [
+    {
+      "name": "cells",
+      "schema": [
+        {
+          "name": "sheet",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "ref",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "formula",
+          "type": "text"
+        },
+        {
+          "name": "bold",
+          "type": "bool"
+        },
+        {
+          "name": "format",
+          "type": "text"
+        },
+        {
+          "name": "renderer",
+          "type": "text"
+        }
+      ],
+      "rules": {
+        "list": "",
+        "view": "",
+        "create": "",
+        "update": "",
+        "delete": ""
+      }
+    }
+  ]
+}

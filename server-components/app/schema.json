@@ -1,0 +1,5 @@
+{
+  "collections": [
+    { "name": "notes", "schema": [{ "name": "title", "type": "text", "required": true }], "rules": { "list": "", "view": "", "create": "", "update": "", "delete": "" } }
+  ]
+}

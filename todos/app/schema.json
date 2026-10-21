@@ -1,0 +1,5 @@
+{
+  "collections": [
+    { "name": "todos", "schema": [{ "name": "title", "type": "text", "required": true }, { "name": "done", "type": "bool" }], "rules": { "list": "", "view": "", "create": "", "update": "", "delete": "" } }
+  ]
+}

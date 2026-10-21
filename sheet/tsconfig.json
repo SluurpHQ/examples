@@ -1,0 +1,5 @@
+{
+  "extends": "./.sluurp/tsconfig.json",
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": [".sluurp", "vendor", "node_modules"]
+}

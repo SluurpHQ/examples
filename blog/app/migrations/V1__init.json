@@ -1,0 +1,38 @@
+{
+  "collections": [
+    {
+      "name": "articles",
+      "schema": [
+        {
+          "name": "title",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "tags",
+          "type": "text"
+        },
+        {
+          "name": "body",
+          "type": "json"
+        }
+      ],
+      "rules": {
+        "list": "",
+        "view": ""
+      }
+    }
+  ],
+  "content": {
+    "collections": [
+      "articles"
+    ],
+    "locales": [
+      "en",
+      "fr"
+    ],
+    "previews": {
+      "articles": "/{locale}/{slug}"
+    }
+  }
+}

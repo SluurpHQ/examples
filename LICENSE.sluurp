@@ -1,0 +1,169 @@
+Sluurp License
+
+Copyright (c) 2026 Zeneka. All rights reserved.
+
+Sluurp, its source code, binaries, documentation and designs are the
+property of Zeneka and are protected by copyright law and
+international treaties. Sluurp is distributed as binaries only. Its source
+code is not published, is not licensed to you, and may not be copied,
+distributed or used except as Zeneka allows in writing. Nothing
+in this licence transfers any ownership of Sluurp to you; you are given only
+the rights to use it set out below.
+
+1. Free for non-commercial use
+
+   You may download, install and run the Sluurp binaries, at no charge, for
+   non-commercial purposes: personal projects, study, schools, clubs,
+   charities and other uses that do not earn money. You may share the
+   unmodified binaries with others for the same purposes, on as many
+   servers as you like, several run as one (a swarm of nodes) included.
+
+2. Commercial use needs a commercial licence
+
+   Running Sluurp to operate a business, to earn money from an application
+   built on it, or to build or host applications for paying clients is
+   commercial use. Commercial use is allowed only under a paid commercial
+   licence, on the terms of that licence. One licence covers every server
+   and swarm node of the person or business that holds it, as many as it
+   likes. Development on your own computer does not need one.
+
+3. Commercial licences are yours alone
+
+   A commercial licence is granted to the person or business that bought
+   it, for its own use. It may not be resold, rented, lent, given away,
+   shared or otherwise transferred to anyone else, alone or with anything
+   else, without the written agreement of Zeneka. It covers only
+   the servers of the person or business that holds it: not those of
+   another business, a client, a partner, or a company in the same group
+   that is a separate legal entity.
+
+4. What you may not do
+
+   You may not modify, decompile, disassemble or reverse engineer the
+   binaries, except where the law allows it despite this term; remove or
+   bypass the licence check; sell, rent or sublicense the binaries or a
+   licence; or offer Sluurp itself as a hosted service to others.
+
+5. Your applications are yours
+
+   The applications, data and content you make with Sluurp belong to you.
+   Code the UI kit places in your application (a component you copy, a
+   story it writes) is yours to use in that application under the same
+   terms as the rest of it.
+
+6. Third-party software
+
+   The binaries include software from others under their own licences. Those
+   licences, and their notices, are listed at
+   https://sluurp.org/license, and they apply to those parts.
+
+7. No warranty
+
+   Sluurp is provided "as is", without warranty of any kind, express or
+   implied, including the warranties of merchantability, fitness for a
+   particular purpose and non-infringement. In no event shall the authors be
+   liable for any claim, damages or other liability arising from the use of
+   Sluurp.
+
+8. Ending
+
+   This licence ends automatically if you break its terms. On ending, you
+   must stop using Sluurp and delete your copies.
+
+
+TERMS OF SALE FOR COMMERCIAL LICENCES
+
+These terms apply when you buy a Sluurp commercial licence (a "business
+licence"). What a licence lets you do is set out above; these terms cover the
+purchase itself. Last updated: 1 October 2026.
+
+S1. Who you buy from
+
+   You buy from Zeneka ("we", "us"). You are the person or
+   business named on the order ("you"). By placing an order you accept these
+   terms and the Sluurp License. If you buy for a business, you confirm that
+   you may act for it. Business licences are sold to businesses and
+   professionals; a private person using Sluurp for themselves, without
+   earning money from it, needs no licence.
+
+S2. What you buy
+
+   A business licence is a key that allows commercial use of Sluurp on
+   every server the business runs, swarm nodes included, paid once. Its
+   price is the one shown at
+   https://sluurp.org/business when you buy it, including any offer running
+   then. A licence bought at an offer price is the same licence, and keeps
+   working as any other.
+
+   A licence is paid once and does not expire. It covers every version of
+   Sluurp released while you hold it, for as long as Sluurp is offered under
+   these terms. We may change what later versions include, or their prices,
+   for new purchases; a licence you already hold keeps working.
+
+S3. Prices and taxes
+
+   Prices are in US dollars and do not include taxes. Where the law requires
+   it, value added tax, sales tax or a similar tax is added at checkout,
+   based on where you are. A business with a valid VAT or tax number may be
+   charged no tax where the reverse-charge rules apply; you are then
+   responsible for declaring it. Prices may change at any time; the price
+   you pay is the one shown when you place the order.
+
+S4. Payment
+
+   Payment is taken in full when you order, by the methods offered at
+   checkout. Card and bank details go straight to our payment provider; we
+   never see or store them. Your licence key is sent once the payment has
+   cleared.
+
+S5. Invoices
+
+   Each purchase comes with an invoice, sent by email to the address on the
+   order, showing the business name, address and tax number you give at
+   checkout, and any tax charged. If a detail is wrong, tell us within 30
+   days and we will issue a corrected invoice.
+
+S6. Refunds
+
+   Ask for a refund within 30 days of the purchase and we give you your money
+   back in full, with no questions asked, to the method you paid with. Once a
+   licence is refunded, its key stops being valid, and any server using it
+   commercially needs another licence. After 30 days, purchases are not
+   refundable, except where the law says otherwise or where we cannot deliver
+   what you bought.
+
+S7. Support and updates
+
+   Updates are published at https://github.com/SluurpHQ/releases, where bugs
+   are reported and features asked for. Licence holders get answers about
+   their licence and purchases by email. Sluurp is in alpha: we fix what we
+   can, but we do not promise a response time or that a particular problem
+   will be fixed.
+
+S8. Liability
+
+   As far as the law allows, our total liability for anything to do with a
+   purchase is limited to what you paid for it. We are not liable for lost
+   profits, lost data or indirect damages. Nothing in these terms limits
+   liability that the law says cannot be limited.
+
+S9. Ending a licence
+
+   A licence ends if you break the Sluurp License or these terms, for example
+   by passing a key on to another business. It also ends if a payment is
+   reversed or charged back. When it ends, stop using Sluurp commercially on
+   the servers it covered. No refund is due for a licence that ends because
+   the terms were broken.
+
+S10. Changes to these terms
+
+   We may update these terms. The version in force when you buy applies to
+   that purchase.
+
+S11. Law and disputes
+
+   These terms are governed by the law of the country where the Sluurp
+   authors are established. Disputes go to its courts, unless the law of your
+   country gives you the right to go to yours.
+
+Questions about licensing or a purchase: https://sluurp.org/business

@@ -1,0 +1,15 @@
+{
+  "collections": [
+    {
+      "name": "messages",
+      "schema": [
+        { "name": "name", "type": "text", "required": true },
+        { "name": "email", "type": "email", "required": true },
+        { "name": "topic", "type": "text", "required": true },
+        { "name": "message", "type": "text", "required": true },
+        { "name": "copy", "type": "bool" }
+      ],
+      "rules": { "create": "" }
+    }
+  ]
+}

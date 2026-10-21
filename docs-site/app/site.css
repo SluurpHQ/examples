@@ -1,0 +1,7 @@
+.prose { line-height: 1.7; }
+.prose h1 { font-size: 2rem; font-weight: 700; margin: 0 0 1rem; }
+.prose h2 { font-size: 1.3rem; font-weight: 650; margin: 2rem 0 0.5rem; }
+.prose p, .prose pre { margin: 0 0 1rem; }
+.prose a { text-decoration: underline; }
+.prose :not(pre) > code { font-size: 0.9em; padding: 0.1em 0.35em; border-radius: 0.3rem; background: var(--muted); }
+.prose pre { overflow-x: auto; padding: 1rem; border-radius: 0.6rem; border: 1px solid var(--border); font-size: 0.85rem; }

@@ -1,0 +1,10 @@
+{
+  "locales": ["en", "fr", "ro", "de"],
+  "wiki.title": { "en": "Wiki", "fr": "Wiki", "ro": "Wiki", "de": "Wiki" },
+  "wiki.sign-in": { "en": "Sign in", "fr": "Se connecter", "ro": "Conectare", "de": "Anmelden" },
+  "wiki.sign-in-about": { "en": "The wiki is for its members. Sign in to read and write it.", "fr": "Le wiki est réservé à ses membres. Connectez-vous pour le lire et y écrire.", "ro": "Wiki-ul e pentru membrii săi. Conectați-vă ca să îl citiți și să scrieți.", "de": "Das Wiki ist für seine Mitglieder. Melden Sie sich an, um es zu lesen und zu schreiben." },
+  "wiki.email": { "en": "Email", "fr": "E-mail", "ro": "E-mail", "de": "E-Mail" },
+  "wiki.password": { "en": "Password", "fr": "Mot de passe", "ro": "Parolă", "de": "Passwort" },
+  "wiki.sign-out": { "en": "Sign out", "fr": "Se déconnecter", "ro": "Deconectare", "de": "Abmelden" },
+  "wiki.wrong": { "en": "That email and password do not match.", "fr": "Cet e-mail et ce mot de passe ne correspondent pas.", "ro": "E-mailul și parola nu se potrivesc.", "de": "E-Mail und Passwort passen nicht zusammen." }
+}

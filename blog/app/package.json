@@ -1,0 +1,36 @@
+{
+  "name": "blog",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@base-ui/react": "^1.8.0",
+    "@chenglou/pretext": "^0.0.9",
+    "@fontsource-variable/geist-mono": "^5.3.0",
+    "@fontsource-variable/source-serif-4": "^5.3.0",
+    "@fontsource-variable/space-grotesk": "^5.3.0",
+    "@sluurp/twist": "github:SluurpHQ/twist",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "cn": "^0.4.0",
+    "d3-contour": "4",
+    "d3-geo": "3",
+    "hyphen": "^1.14.1",
+    "lucide-react": "^1.52.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "recharts": "3.8.0",
+    "roughjs": "^4.6.6",
+    "tailwind-merge": "^3.7.0",
+    "temml": "^0.13.5",
+    "topojson-client": "3",
+    "world-atlas": "2",
+    "@sluurp-plugins/blocks": "https://sluurp.org/registry/blocks-0.2.2.tgz",
+    "@sluurp-plugins/content": "https://sluurp.org/registry/content-0.2.2.tgz"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "shadcn": "^4.21.3"
+  }
+}
